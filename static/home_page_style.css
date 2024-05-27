@@ -1,0 +1,80 @@
+body{
+    background-image: url("images1.jpg");   
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: transparent; /* Transparent background */
+    border-radius: 8000px;
+    margin-top: -85px;
+}
+
+h2 {
+    text-align: center;
+    color:aliceblue ;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+output {
+    color:aliceblue ;
+    text-align: center;
+    font-size: 35px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-row {
+    flex: 1 1 calc(50% - 20px); /* Two columns with gap */
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    color:aliceblue ;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+login{
+    background-color: transparent;
+    width: 900px;
+    height: 620px;
+    border: 3px solid white;
+    padding: 40px;
+    margin-top: 3px;
+    margin-left: 270px;
+    position:absolute;
+    text-align:initial;
+
+    }
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #031347;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1 1 100%; /* Full width button */
+}
+
+button:hover {
+    background-color: #b5b6b8;
+    color: rgb(17, 16, 16);
+}

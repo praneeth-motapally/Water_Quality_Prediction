@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='/home_page_style.css') }}">
+    <title>Input Form Template</title>
+</head>
+<body>
+    <login>
+    <div class="form-container">
+        <h2>Water Quality Prediction</h2>
+        <form action="{{ url_for('predict')}}"method="post">
+            <div class="form-row">
+                <label for="Aluminium"> Aluminium</label>
+                <input type="text" name="Aluminium" placeholder="Aluminium per liter" required="required">
+            </div>
+            <div class="form-row">
+                <label for="Ammonia">Ammonia</label>
+                <input type="text" name="Ammonia" placeholder="Ammonia per liter" required="required">
+            </div>
+            <div class="form-row">
+                <label for="Arsenic">Arsenic</label>
+                <input type="text" name="Arsenic" placeholder="Arsenic per liter" required="required">
+            </div>
+            <div class="form-row">
+                <label for="Cadmium">Cadmium</label>
+                <input type="text" name="Cadmium" placeholder="Cadmium per liter" required="required">
+            </div>
+            <div class="form-row">
+                <label for="Chloramine">Chloramine</label>
+                <input type="text" name="Chloramine" placeholder="Chloramine per liter" required="required">
+            </div>
+            <div class="form-row">
+                <label for="Chromium">Chromium</label>
+                <input type="text" name="Chromium" placeholder="Chromium per liter" required="required">
+            </div>
+            <div class="form-row">
+                <label for="Copper">Copper</label>
+                <input type="text" name="Copper" placeholder="Copper per liter" required="required">
+            </div>
+            <div class="form-row">
+                <label for="Viruses">Viruses</label>
+                <input type="text" name="Viruses" placeholder="Viruses per liter" required="required">
+            </div>
+            <div class="form-row">
+                <label for="Nitrates">Nitrates</label>
+                <input type="text" name="Nitrates" placeholder="Nitrates per liter" required="required">
+            </div>
+            <div class="form-row">
+                <label for="Perchlorate">Perchlorate</label>
+                <input type="text" name="Perchlorate" placeholder="Perchlorate per liter" required="required">
+            </div>
+            <div class="form-row">
+                <label for="Selenium">Selenium</label>
+                <input type="Selenium" name="Selenium" placeholder="Selenium per liter" per liter required="required">
+            </div>
+            <div class="form-row">
+                <label for="Uranium">Uranium</label>
+                <input type="text" name="Uranium" placeholder="Uranium per liter" required="required">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            <div class="form-row">
+             <output>{{predicted_text}}</output>   
+            </div>
+        </form>
+    </div>
+</login>
+</body>
+</html>
